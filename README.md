@@ -1,7 +1,5 @@
 # Benchmarks of Go serialization methods
 
-[![Gitter chat](https://badges.gitter.im/alecthomas.png)](https://gitter.im/alecthomas/Lobby)
-
 This is a test suite for benchmarking various Go serialization methods.
 
 ## Tested serialization methods
