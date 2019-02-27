@@ -49,8 +49,8 @@ END {
 	print "---\ntotals:"
 	for (p in pname) {
 		pr=pname[p]
-	    arry[proto[pr,3]] = sprintf("%-40s %10d %6d %s %5d %s %3d %s %6.2f s %7d KB %7.2f ns/alloc",pr,proto[pr,2],proto[pr,3],proto[pr,4],proto[pr,5],proto[pr,6],proto[pr,7],
-			proto[pr,8],proto[pr,2]*proto[pr,3]/1000000000,proto[pr,2]*proto[pr,5]/10000,proto[pr,3]/proto[pr,7])
+	    arry[proto[pr,3]] = sprintf("%-40s %10d %6d %s %5d %s %3d %s %6.2f s %7d KB",pr,proto[pr,2],proto[pr,3],proto[pr,4],proto[pr,5],proto[pr,6],proto[pr,7],
+			proto[pr,8],proto[pr,2]*proto[pr,3]/1000000000,proto[pr,2]*proto[pr,5]/10000)
 	}
     arr_sort(arry,keys)
 	for(i=0;i<length(keys);i++){
